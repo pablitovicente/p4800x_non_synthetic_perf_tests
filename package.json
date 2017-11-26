@@ -11,6 +11,7 @@
   "dependencies": {
     "ab-result": "^1.0.2",
     "express": "^4.16.2",
-    "mysql": "^2.15.0"
+    "mysql": "^2.15.0",
+    "redis-benchmark-parser": "0.0.4"
   }
 }

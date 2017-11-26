@@ -21,7 +21,7 @@ app.get('/insane', (req, res) => {
       INNER JOIN
     employees.salaries s ON (e.emp_no = s.emp_no) WHERE e.emp_no <= ${biggestEmployeeNumber} ORDER BY RAND()`, function (error, results, fields) {
     if (error) throw error;
-    console.log(`sending ${results.length} results to http client...`);
+    console.log(`sending ${results.length} results, in RANDOM mode, to http client...`);
     // No time to do stats in Redis...
     // requestsServerd++;
     res.send(results);
